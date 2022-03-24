@@ -16,6 +16,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY dist/ContactMicroService /usr/share/nginx/html
 COPY appshell.sh appshell.sh
 #expose ports 8080 for java swagger app and 80 for nginx app
-EXPOSE 80 8080
+EXPOSE 80 3000
 ENTRYPOINT ["sh", "/appshell.sh"]
 
